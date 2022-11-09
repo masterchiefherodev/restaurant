@@ -1,5 +1,5 @@
 ## __Resturante__
-* Menú principal : Página de inicio, donde los usuarios tendrń la información básica del restaurant, conocer las secciones, etc
+Menú principal : Página de inicio, donde los usuarios tendrń la información básica del restaurant, conocer las secciones, etc
 * Menú de comida : Página donde se podran conocer todos los productos que se ofertan con:
   * Imagen
   * Descripción
