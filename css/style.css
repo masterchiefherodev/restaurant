@@ -1,21 +1,31 @@
-/* Import font */
+/* Imports font */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;900&display=swap");
+
+/* cyan-300 */
 
 /* Variables de los colores*/
 :root {
-  --green-400: #4ade80;
-  --green-500: #22c55e;
+  --body-background: #171717;
+  --cyan--900: #164e63;
+  --cyan--300: #67e8f9;
   --emeral--300: #6ee7b7;
   --emeral--400: #34d399;
   --emeral--500: #10b981;
-  --neutral-100: #f4f4f5;
+  --green--400: #4ade80;
+  --green--300: #86efac;
+  --green--500: #22c55e;
+  --green--600: #16a34a;
+  --indigo--600:#4f46e5;
+  --indigo--900:#312e81;
   --neutral--200: #e5e5e5;
-  --neutral-800: #262626;
-  --body-background: #171717;
-  --neutral-900: #171717;
-  --slate-900:#0F172A;
-  --slate-500:#64748b;
-  --slate-600:#475569;
+  --neutral--100: #f4f4f5;
+  --neutral--800: #262626;
+  --neutral--900: #171717;
+  --slate--500:#64748b;
+  --slate--600:#475569;
+  --slate--900:#0F172A;
+  --tear--300: #5eead4;
+  --tear-400: #2dd4bf;
 }
 
 /* Reset de los estilos por defecto en distitos nvegadores */
@@ -123,8 +133,8 @@ a {
 }
 
 hr {
-  color: var(--neutral-100);
-  background-color: var(--neutral-100);
+  color: var(--neutral--100);
+  background-color: var(--neutral--100);
   height: 1px;
   width: 70%;
 }
@@ -253,7 +263,7 @@ footer {
 }
 
 .card {
-  background-color: var(--neutral-800);
+  background-color: var(--neutral--800);
   border-radius: 0.5rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
 }
@@ -320,14 +330,14 @@ footer {
 .card__product__details {
   display: flex;
   flex-direction: column;
-  background-color: var(--neutral-800);
+  background-color: var(--neutral--800);
   margin: 1em;
   padding: 1em;
   height: fit-content;
   min-width: 230px;
   align-items: center;
   gap: 0.5em;
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   border-radius: 1.25rem;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.25);
   max-width: 700px;
@@ -394,7 +404,7 @@ footer {
 
 @media (min-width: 700px) {
   .container__product__details {
-    background-color: var(--neutral-900);
+    background-color: var(--neutral--900);
     min-height: 100vh;
     display: flex;
     flex-direction: row;
@@ -462,6 +472,7 @@ footer {
 .card--variant__categories:hover {
   transform: scale(1.01);
   transition: ease 0.2s;
+  
 }
 
 .card__details--variant__categories {
@@ -470,8 +481,13 @@ footer {
   align-items: center;
 }
 
+.card__details--variant__categories:hover{
+  color: var(--emeral--500);
+}
+
 .card__details--variant__categories p {
   font-weight: 300;
+  color: var(--neutral--100);
 }
 
 /* Variants__food__categories__close */
@@ -502,7 +518,7 @@ footer {
 .card__food__size--sqr {
   min-inline-size: 20px;
   padding: 0.5rem;
-  background-color: var(--neutral-900);
+  background-color: var(--neutral--900);
   text-align: center;
   font-weight: 500;
 }
@@ -528,7 +544,7 @@ footer {
 }
 
 .h1__variant_galery {
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
@@ -547,7 +563,7 @@ footer {
 
 .promos__top p {
   font-size: 1rem;
-  color: var(--neutral-900);
+  color: var(--neutral--900);
 }
 
 .promos__top p span {
@@ -555,7 +571,7 @@ footer {
 }
 
 .card__variant__promos {
-  background-color: var(--neutral-800);
+  background-color: var(--neutral--800);
   border-radius: 0.5em;
   display: flex;
   padding: 20px;
@@ -576,24 +592,25 @@ footer {
 }
 
 .card__varian__promos--left h1{
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   font-size: 2rem;
   font-weight: 500;
 }
 
 .card__varian__promos--right h1:hover{
   transform: scale(1.05);
-  color: var(--emeral--500);
+  color: var(--tear--300);
   transition: ease 0.2s;
+  text-shadow: 2px 2px var(--indigo--600);
 }
 
 .card__varian__promos--left h2 {
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   font-weight: 100;
 }
 
 .card__varian__promos--left p {
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   font-weight: 400;
 }
 
@@ -605,7 +622,7 @@ footer {
 }
 
 .card__varian__promos--right p {
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   font-weight: 100;
 }
 
@@ -615,16 +632,16 @@ footer {
 .footer__container {
   height: 50px;
   text-align: center;
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background-color: var(--neutral-800);
+  background-color: var(--neutral--800);
 }
 
 .footer__container a {
-  color: var(--neutral-100);
+  color: var(--neutral--100);
 }
 /* Footer__container__close */
 
@@ -636,7 +653,7 @@ footer {
 
 .hero__container{
   padding: 1rem;
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   align-self: center;
   max-width: 90%;
   display: flex;
@@ -674,7 +691,7 @@ footer {
   border-radius: 0.3rem;
   cursor: pointer;
   border: none;
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   font-size: 1.5rem;
   font-weight: 900;
 }
@@ -686,7 +703,7 @@ footer {
 
 .main__menu__description{
   /* background-color: #10b981; */
-  background-color: var(--slate-900);
+  background-color: var(--slate--900);
   display: flex;
   justify-content: space-between;
 }
@@ -707,7 +724,7 @@ footer {
 }
 
 .main__menu__desc--left--container h1{
-  color: var(--slate-500);
+  color: var(--slate--500);
   font-size: 3.2rem;
   font-weight: 900;
 }
@@ -718,12 +735,12 @@ footer {
 }
 
 .main__menu__desc--left--container p{
-  color: var(--neutral-100);
+  color: var(--neutral--100);
   font-size: 1.5rem;
 }
 
 .main__menu__desc--left--container span{
-  color: var(--slate-500);
+  color: var(--slate--500);
 }
 
 .main__menu__desc--right{
@@ -784,5 +801,42 @@ footer {
   .main__menu__description--img{
     height: auto;
   }
+
 }
+
+.hero__discount{
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 0 0;
+}
+
+.hero__discount h1{
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.hero__discount h2{
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hero__discount a h3{
+  font-size: 15rem;
+  font-weight: 500;
+  color: var(--neutral--100);
+  text-shadow: 0.5rem 0.5rem var(--indigo--600);
+}
+
+.hero__discount h3:hover{
+  transform: scale(1.1);
+  transition: ease 0.1s;
+}
+
+.hero__discount span{
+  color: var(--slate--500);
+}
+
 /* Hero__close */
